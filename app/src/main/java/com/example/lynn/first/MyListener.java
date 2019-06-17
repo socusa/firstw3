@@ -17,7 +17,17 @@ public class MyListener implements View.OnClickListener {
     }
     @Override
     public void onClick(View view) {
-        int[] colors = {color(),color()};
+        int numberOfColors = 2;
+
+        try {
+            numberOfColors = Integer.parseInt(number.getText().toString());
+        } catch(Exception e) {
+
+        }
+        int[] colors = new int[numberOfColors];
+
+        for(int counter=0;counter<colors.length;counter++)
+            colors[counter] = color();
 
         GradientDrawable drawable = new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,colors);
 
