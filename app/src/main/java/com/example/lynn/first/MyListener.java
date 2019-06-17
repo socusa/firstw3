@@ -19,7 +19,9 @@ public class MyListener implements View.OnClickListener {
     public void onClick(View view) {
         int[] colors = {color(),color()};
 
-        GradientDrawable drawable = new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP)
+        GradientDrawable drawable = new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,colors);
+
+        myView.setBackground(drawable);
 
     }
 }
