@@ -3,12 +3,16 @@ package com.example.lynn.first;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    public static MyView myView;
+    public static MyListener listener = new MyListener();
+    public static Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(myView = new MyView(this));
     }
 }
