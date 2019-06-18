@@ -28,6 +28,10 @@ public class MyThread implements Runnable {
         }
     }
 
+    public void stop() {
+        keepGoing = false;
+    }
+
     @Override
     public void run() {
         while (keepGoing) {
