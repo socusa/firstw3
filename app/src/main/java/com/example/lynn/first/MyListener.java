@@ -31,7 +31,7 @@ public class MyListener implements View.OnClickListener {
 
         GradientDrawable drawable = new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,colors);
 
-        myView.setBackground(drawable);
+        displayArea.setBackground(drawable);
 
     }
 }
