@@ -51,7 +51,7 @@ public class MyView extends RelativeLayout {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(width,3*height/4);
 
         layoutParams.leftMargin = 0;
-        layoutParams.topMargin = height/4;
+        layoutParams.topMargin = 100;
 
         displayArea.setLayoutParams(layoutParams);
 
