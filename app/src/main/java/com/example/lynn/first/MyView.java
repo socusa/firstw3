@@ -5,6 +5,7 @@ import android.graphics.Point;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -19,27 +20,31 @@ public class MyView extends RelativeLayout {
         width = sizeOfScreen.x;
         height = sizeOfScreen.y;
 
+        LinearLayout linearLayout = new LinearLayout(context);
+
         button = new Button(context);
 
         button.setOnClickListener(listener);
 
-        addView(button);
+        linearLayout.addView(button);
 
         TextView textView = new TextView(context);
 
         textView.setText("Number of Colors");
 
-        addView(textView);
+        linearLayout.addView(textView);
 
         number = new EditText(context);
 
-        addView(number);
+        linearLayout.addView(number);
 
         TextView textView1 = new TextView(context);
 
         textView1.setText("Delay");
 
-        addView(textView1);
+        linearLayout.addView(textView1);
+
+        addView(linearLayout);
 
         displayArea = new View(context);
 
