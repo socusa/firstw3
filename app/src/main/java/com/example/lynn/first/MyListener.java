@@ -11,7 +11,6 @@ public class MyListener implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
-
+        myThread = new MyThread();
     }
 }
