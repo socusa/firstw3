@@ -45,6 +45,7 @@ public class MyView extends LinearLayout {
 
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width,3*height/4);
 
+        layoutParams.leftMargin = 0;
         layoutParams.topMargin = height/4;
 
         displayArea.setLayoutParams(layoutParams);
