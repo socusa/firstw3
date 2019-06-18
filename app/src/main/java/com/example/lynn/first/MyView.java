@@ -44,6 +44,10 @@ public class MyView extends RelativeLayout {
 
         linearLayout.addView(textView1);
 
+        delay = new EditText(context);
+
+        linearLayout.addView(delay);
+
         addView(linearLayout);
 
         displayArea = new View(context);
