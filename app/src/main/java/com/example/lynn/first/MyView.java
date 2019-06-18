@@ -5,12 +5,12 @@ import android.graphics.Point;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import static com.example.lynn.first.MainActivity.*;
 
-public class MyView extends LinearLayout {
+public class MyView extends RelativeLayout {
     public MyView(Context context) {
         super(context);
 
@@ -43,7 +43,7 @@ public class MyView extends LinearLayout {
 
         displayArea = new View(context);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width,3*height/4);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(width,3*height/4);
 
         layoutParams.leftMargin = 0;
         layoutParams.topMargin = height/4;
